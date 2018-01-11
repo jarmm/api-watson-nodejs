@@ -1,12 +1,10 @@
 'use strict'
 
 require('dotenv').config()
-
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1')
-
 const discovery = new DiscoveryV1({
-    username: process.env.DISCOVERY_USERNAME,
-    password: process.env.DISCOVERY_PASSWORD,
+    username: process.env.USERNAME,
+    password: process.env.PASSWORD,
     version_date: process.env.DISCOVERY_VERSION_DATE
   })
 

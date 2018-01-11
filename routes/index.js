@@ -2,10 +2,15 @@
 
 const express = require('express')
 const api = express.Router()
-const watsonCtrl = require('../controllers/watson')
+const discoveryCtrl = require('../controllers/discovery')
+const naturalLanguageClassifierCtrl = require('../controllers/natural-language-classifier')
 
-api.get('/environments', watsonCtrl.getEnvironments)
-api.get('/searchWord', watsonCtrl.getWord)
-api.get('/collection', watsonCtrl.getCollection)
+/** Discovery */
+api.get('/environments', discoveryCtrl.getEnvironments)
+api.get('/searchWord', discoveryCtrl.getWord)
+api.get('/collection', discoveryCtrl.getCollection)
+
+/** Classifier */
+api.get('/classifier', naturalLanguageClassifierCtrl.getClassifier)
 
 module.exports = api
