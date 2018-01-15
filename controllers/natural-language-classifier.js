@@ -2,7 +2,6 @@
 
 require('dotenv').config()
 const NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1')
-/*
 const natural_language_classifier = new NaturalLanguageClassifierV1({
     username: process.env.USERNAME,
     password: process.env.PASSWORD,
@@ -24,4 +23,3 @@ function getClassifier (req, res, next) {
 module.exports = {
     getClassifier
 }
-*/

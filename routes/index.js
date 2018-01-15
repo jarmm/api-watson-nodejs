@@ -12,7 +12,7 @@ api.get('/searchWord', discoveryCtrl.getWord)
 api.get('/collection', discoveryCtrl.getCollection)
 
 /** Natural Languague Classifier */
-api.get('/classifier', naturalLanguageClassifierCtrl.getClassifier)
+//api.get('/classifier', naturalLanguageClassifierCtrl.getClassifier)
 
 /** Natural Languague Unserstanding */
 api.get('/nlu', naturalLanguageUnderstandingCtrl.getAnalyzeNlu)
