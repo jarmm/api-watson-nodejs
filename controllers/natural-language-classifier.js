@@ -8,7 +8,7 @@ const natural_language_classifier = new NaturalLanguageClassifierV1({
     password: process.env.PASSWORD,
     version: process.env.NLC_VERSION_DATE
 })
-*/
+
 function getClassifier (req, res, next) {
     classifier.classify({
         text: req.body.text,
@@ -24,3 +24,4 @@ function getClassifier (req, res, next) {
 module.exports = {
     getClassifier
 }
+*/
