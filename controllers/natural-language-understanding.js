@@ -15,6 +15,7 @@ function getAnalyzeNlu (req, res, next) {
     nlu.analyze(
         {
             text: req.query.text, // <text>, <hmtl>, <url>
+            language: req.query.language,
             features: {
                 'sentiment': {},
                 'emotion': {},
